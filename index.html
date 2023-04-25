@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Website for the 4th Quarter GFA 1">
+        <meta name="author" content="Sean Bryn D. Opiso">
+        <title>Couples For Christ Unofficial Website | Login</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style_login.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <center>
+                <a href="https://cebushelter.org/">
+                    <img src="images/logo.png" id="logo">
+                </a>
+            </center>
+        </header>
+
+        <center id="mainBody">
+            <div>
+                <p>
+                    We are a Christian child caring agency in Cebu City, Philippines. I support this charity as it offers shelter to those that are homeless. It offers good food to those that are hungry. It gives hope to the orphaned and abandoned children in need. You should join this charity too, and help the children!
+                </p>
+            </div>
+            <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Sign Up!</button>
+        </center>
+
+        <div id="id01" class="modal">
+            <form class="modal-content animate" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="images/avatar.png" alt="Avatar" class="avatar">
+                </div>
+          
+                <div id="formBody" class="container">
+                    <label for="firstName"><b>First Name</b></label>
+                    <input type="text" placeholder="Enter First Name" name="firstName" required>
+          
+                    <label for="lastName"><b>Last Name</b></label>
+                    <input type="text" placeholder="Enter Last Name" name="lastName" required>
+          
+                    <label for="sex"><b>Sex</b></label><br>
+                    <input type="radio" id="sex1" name="sex" value="Male" required>
+                    <label for="sex1">Male</label><br>
+                    <input type="radio" id="sex2" name="sex" value="Female" required>
+                    <label for="sex2">Female</label><br>
+                    <input type="radio" id="sex3" name="sex" value="Prefer not to say" required>
+                    <label for="sex3">Prefer not to say</label><br>
+          
+                    <label for="email"><b>Email Address</b></label>
+                    <input type="text" placeholder="Enter Email Address" name="email" required>
+          
+                    <label for="contact"><b>Contact Number (optional)</b></label>
+                    <input type="text" placeholder="Enter Contact Number" name="contact">
+                  
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
